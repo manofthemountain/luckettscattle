@@ -407,3 +407,69 @@ a:hover {
 .beef-share-form button {
   margin-top: 0.5rem;
 }
+
+/* Beef Share Form */
+.beef-share-form {
+  max-width: 600px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #111319;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.beef-share-form h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.beef-share-form .form-description {
+  margin: -0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.beef-share-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  gap: 0.4rem;
+}
+
+.beef-share-form input,
+.beef-share-form select,
+.beef-share-form textarea {
+  padding: 0.85rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: #0c0e12;
+  color: var(--text);
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.beef-share-form input::placeholder,
+.beef-share-form textarea::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.beef-share-form textarea {
+  resize: vertical;
+}
+
+.beef-share-form button {
+  margin-top: 0.5rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
