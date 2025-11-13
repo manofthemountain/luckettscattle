@@ -20,7 +20,77 @@ const description = "Get in touch with Lucketts Cattle Co. to ask questions or r
 
     <p style="font-size:0.95rem;line-height:1.7;">
       Email us at <a href="mailto:hello@luckettscattle.com">hello@luckettscattle.com</a> or use the
-      simple form below (once we wire it up).
+    form below.
     </p>
   </section>
+
+ <form
+  action="https://formspree.io/f/mblqlbkk"
+  method="POST"
+  class="beef-share-form"
+>
+  <h2>Join the Beef Share Interest List</h2>
+  <p class="form-description">
+    Tell us what you’re interested in and we’ll follow up with availability, pricing,
+    and harvest windows as we schedule harvest dates.
+  </p>
+
+  <label>
+    Your Name
+    <input type="text" name="name" placeholder="Full name" required />
+  </label>
+
+  <label>
+    Email Address
+    <input type="email" name="email" placeholder="you@example.com" required />
+  </label>
+
+  <label>
+    Phone (optional)
+    <input type="text" name="phone" placeholder="(xxx) xxx-xxxx" />
+  </label>
+
+  <label>
+    Beef Share Size
+    <select name="share-size" required>
+      <option value="">Select one…</option>
+      <option value="quarter">Quarter Beef</option>
+      <option value="half">Half Beef</option>
+      <option value="whole">Whole Beef</option>
+      <option value="unsure">Not sure yet</option>
+    </select>
+  </label>
+
+  <label>
+    Rough Timing
+    <select name="timing">
+      <option value="">Select one…</option>
+      <option value="next-available">Next available harvest</option>
+      <option value="3-6-months">3–6 months</option>
+      <option value="6-12-months">6–12 months</option>
+      <option value="flexible">Flexible / just curious</option>
+    </select>
+  </label>
+
+  <label>
+    Additional Notes
+    <textarea
+      name="notes"
+      rows="4"
+      placeholder="Any questions, cut preferences, or freezer space constraints?"
+    ></textarea>
+  </label>
+
+  <!-- Redirect to thank-you page after submit -->
+  <input
+    type="hidden"
+    name="_redirect"
+    value="https://luckettscattle.com/thank-you"
+  />
+
+  <button type="submit" class="btn btn-primary">
+    Join the List →
+  </button>
+</form>
+
 </BaseLayout>
