@@ -1,43 +1,31 @@
-# Astro Starter Kit: Minimal
+# Lucketts Cattle Co. Website
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This repository contains the source code for the official website of **Lucketts Cattle Company**, a small, human-scale beef operation in the hills of Lucketts, Virginia.  
+The site is built with **Astro**, hosted on **Cloudflare Pages**, and managed through **GitHub** for version control.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Live Site: https://luckettscattle.com  
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🐂 About Lucketts Cattle Co.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Lucketts Cattle Co. is building a small herd across multiple intensively managed pastures to provide premium local beef directly to families in Northern Virginia.  
+Our genetics emphasize South Poll influence, Lowline Angus, and Angus × Hereford crosses.  
+We offer quarter, half, and whole beef shares on a reservation basis.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+This website serves as our:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Customer information hub  
+- Beef share overview and process explanation  
+- Contact and inquiry point  
+- Brand identity and online presence  
 
-Any static assets, like images, can be placed in the `public/` directory.
+---
 
-## 🧞 Commands
+## 🛠️ Tech Stack
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Astro** – Static site framework  
+- **Node.js** – Build environment  
+- **Cloudflare Pages** – Global deployment  
+- **GitHub** – Source control  
+- **Migadu** – Email hosting
