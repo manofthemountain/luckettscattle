@@ -1,0 +1,52 @@
+---
+const { title = "Lucketts Cattle Co.", description = "Premium local beef from the hills of Lucketts, Virginia." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/styles/global.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="brand-mark">LCC</div>
+          <div class="brand-text">
+            <div class="brand-name">Lucketts Cattle Co.</div>
+            <div class="brand-tagline">Beef from the hills of Lucketts</div>
+          </div>
+        </div>
+        <nav class="nav">
+          <a href="/">Home</a>
+          <a href="/cattle">Our Cattle</a>
+          <a href="/beef-shares">Beef Shares</a>
+          <a href="/how-it-works">How It Works</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          &copy; {new Date().getFullYear()} Lucketts Cattle Co. All rights reserved.
+        </div>
+        <div class="footer-meta">
+          Lucketts, Virginia · <a href="mailto:hello@luckettscattle.com">hello@luckettscattle.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

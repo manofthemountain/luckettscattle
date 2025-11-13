@@ -1,16 +1,135 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const title = "Lucketts Cattle Co. | Local Beef from the Hills of Lucketts";
+const description = "Direct-to-consumer beef from small, intensively managed pastures in Lucketts, Virginia. Beef shares, quarters, and halves, raised slow and finished right.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout {title} {description}>
+  <section class="hero">
+    <div>
+      <div class="hero-tag">Local beef · Lucketts, Virginia</div>
+      <h1 class="hero-title">
+        Premium beef from<br />
+        the <span>hills of Lucketts</span>.
+      </h1>
+      <p class="hero-subtitle">
+        Small herd, tight management, and slow-finished beef from cattle rotated across
+        small pasture holdings. Reserve a quarter, half, or whole and know exactly who
+        raised your beef.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="/beef-shares" class="btn btn-primary">
+          Reserve a beef share →
+        </a>
+        <a href="/how-it-works" class="btn btn-outline">
+          How it works
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span>✓ Direct from our farm</span>
+        <span>✓ Limited, pre-reserved harvest slots</span>
+        <span>✓ Human-scale, pasture-forward management</span>
+      </div>
+    </div>
+
+    <aside class="hero-card">
+      <div class="hero-card-title">Next Harvest Window</div>
+      <div class="hero-card-weight">Quarter · Half · Whole</div>
+      <div class="hero-card-grid">
+        <div class="hero-chip">
+          <div class="hero-chip-label">Estimated hang weight</div>
+          <div class="hero-chip-value">≈ 500–700 lb per animal</div>
+        </div>
+        <div class="hero-chip">
+          <div class="hero-chip-label">Take-home cuts</div>
+          <div class="hero-chip-value">≈ 90–100 lb (quarter)</div>
+        </div>
+        <div class="hero-chip">
+          <div class="hero-chip-label">Deposit</div>
+          <div class="hero-chip-value">$X / quarter (TBD)</div>
+        </div>
+        <div class="hero-chip">
+          <div class="hero-chip-label">Processing</div>
+          <div class="hero-chip-value">Customer selects cut sheet</div>
+        </div>
+      </div>
+      <div class="hero-availability">
+        <span>Now building interest list for first Lucketts Cattle harvest.</span>
+        <a class="badge" href="/contact">Get on the list →</a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Our model</div>
+        <h2 class="section-title">Small herd, serious management.</h2>
+      </div>
+      <p class="section-subtitle">
+        We’re experimenting with using multiple 3–5 acre pasture holdings, intensive rotation,
+        and carefully chosen genetics to raise beef that eats like a steakhouse but comes from a
+        neighbor.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">Thoughtful genetics</div>
+        <div class="card-body">
+          We lean toward moderate-framed cattle that finish well on grass and forage:
+          South Poll influence, Lowline Angus, and Red/Black Angus × Hereford crosses.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Human-scale pasture</div>
+        <div class="card-body">
+          Instead of one big ranch, we manage multiple small pastures. That forces tight grazing
+          discipline, careful observation, and a closer relationship with the herd.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Direct relationships</div>
+        <div class="card-body">
+          You know who raised your beef, how it was managed, and where it lived. We’re happy to talk
+          cuts, recipes, and what to actually do with a whole sirloin tip.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Get started</div>
+        <h2 class="section-title">Three steps to your freezer being happy.</h2>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">1. Reserve a share</div>
+        <div class="card-body">
+          Pick quarter, half, or whole. We’ll confirm timing, deposit, and approximate harvest window.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">2. We raise & finish</div>
+        <div class="card-body">
+          The animal stays on our managed pastures. As we approach harvest, you’ll choose a cut sheet
+          with the processor.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">3. Pickup & enjoy</div>
+        <div class="card-body">
+          You pick up your boxed, labeled cuts from the processor (or local delivery if we offer it
+          for that harvest). Steaks, roasts, ground, and more.
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

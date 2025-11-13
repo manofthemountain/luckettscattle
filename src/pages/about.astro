@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "About | Lucketts Cattle Co.";
+const description = "The story and philosophy behind Lucketts Cattle Co.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">About</div>
+        <h1 class="section-title">A small herd in the hills of Lucketts.</h1>
+      </div>
+    </div>
+
+    <p style="font-size:0.95rem;line-height:1.7;">
+      Lucketts Cattle Co. started with a simple idea: could a small, well-managed herd spread across
+      multiple small pastures still produce truly great beef for local families?
+    </p>
+
+    <p style="font-size:0.95rem;line-height:1.7;">
+      We’re not trying to be the biggest operation in Virginia. We’re aiming for something different:
+      a human-scale herd, genetics selected for our climate, and beef that makes you rethink what
+      “local” can taste like.
+    </p>
+
+    <p style="font-size:0.95rem;line-height:1.7;">
+      As we grow, we’ll share more of the behind-the-scenes details — grazing plans, weights, carcass
+      data, and what we learn along the way.
+    </p>
+  </section>
+</BaseLayout>

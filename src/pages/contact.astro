@@ -1,0 +1,26 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Contact | Lucketts Cattle Co.";
+const description = "Get in touch with Lucketts Cattle Co. to ask questions or reserve a beef share.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Contact</div>
+        <h1 class="section-title">Get on the interest list.</h1>
+      </div>
+      <p class="section-subtitle">
+        No hard sell. Tell us what you’re thinking, roughly how much beef you’re interested in, and
+        we’ll follow up with details when our first harvest schedule is locked in.
+      </p>
+    </div>
+
+    <p style="font-size:0.95rem;line-height:1.7;">
+      Email us at <a href="mailto:hello@luckettscattle.com">hello@luckettscattle.com</a> or use the
+      simple form below (once we wire it up).
+    </p>
+  </section>
+</BaseLayout>

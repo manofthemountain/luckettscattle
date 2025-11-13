@@ -1,0 +1,59 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Beef Shares | Lucketts Cattle Co.";
+const description = "Reserve a quarter, half, or whole beef share from Lucketts Cattle Co.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Beef shares</div>
+        <h1 class="section-title">Quarter, half, or whole.</h1>
+      </div>
+      <p class="section-subtitle">
+        Pricing and final weights will be set as we finalize our first harvest schedule. For now,
+        get a feel for how shares usually work and what you can expect to take home.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">Quarter beef</div>
+        <div class="card-body">
+          <ul>
+            <li>≈ 90–110 lb take-home</li>
+            <li>Mix of steaks, roasts, ground, stew, etc.</li>
+            <li>Fits in a small chest freezer.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Half beef</div>
+        <div class="card-body">
+          <ul>
+            <li>≈ 180–220 lb take-home</li>
+            <li>More say in cutting instructions.</li>
+            <li>Great option for two families splitting a half.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Whole beef</div>
+        <div class="card-body">
+          <ul>
+            <li>≈ 350–450 lb take-home</li>
+            <li>Maximum control over cuts and packaging.</li>
+            <li>Requires serious freezer capacity.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:1.5rem;font-size:0.9rem;color:var(--text-muted);">
+      Ready to reserve or just want to understand how the numbers shake out?
+      <a href="/contact">Reach out and we’ll walk through it.</a>
+    </p>
+  </section>
+</BaseLayout>

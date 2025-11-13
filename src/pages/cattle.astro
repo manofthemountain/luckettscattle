@@ -1,0 +1,45 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const title = "Our Cattle | Lucketts Cattle Co.";
+const description = "Learn about the genetics, breeds, and management behind Lucketts Cattle Co.";
+---
+
+<BaseLayout {title} {description}>
+  <section class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-kicker">Our cattle</div>
+        <h1 class="section-title">Built for beef, not for show.</h1>
+      </div>
+      <p class="section-subtitle">
+        We favor moderate-framed cattle that marble well, finish on forage, and fit the way we use
+        small pastures spread across Lucketts.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title">South Poll influence</div>
+        <div class="card-body">
+          South Poll genetics bring heat tolerance, docility, and the ability to finish on grass
+          in the Mid-Atlantic. They’re made for our summers.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Lowline Angus</div>
+        <div class="card-body">
+          Compact frames, high efficiency, and excellent beef quality. Lowline-influenced cattle
+          help us get great beef from smaller acreages.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-title">Angus × Hereford crosses</div>
+        <div class="card-body">
+          Red and black Baldy-style cattle are tried-and-true for temperament, fertility, and
+          carcass quality. They anchor the beef industry for a reason.
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
